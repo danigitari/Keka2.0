@@ -1,0 +1,116 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  font-style: normal;
+  /* transition: all .5s ease; */
+}
+nav a {
+  text-decoration: none;
+  font-style: normal;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul > li {
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 400;
+  font-size: 17px;
+  font-style: normal;
+  transition: 0.2s ease;
+}
+nav ul li i {
+  font-size: 11px;
+}
+nav ul li:hover {
+  background-color: #1762e2;
+}
+.test_dropdown {
+  position: relative;
+}
+.services:hover .text {
+  color: #fff;
+}
+
+.test_dropdown p {
+  display: inline;
+}
+.test_dropdown_menu {
+  top: calc(100% + 20px);
+  position: absolute;
+  z-index: 5;
+  background-color: #fff;
+  width: 300px;
+  border-top: 4px solid blue;
+  left: -25px;
+  display: none;
+}
+.services:hover .test_dropdown_menu {
+  display: block;
+}
+.test_dropdown_menu > div {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+}
+
+.test_dropdown_menu > div:hover {
+  background: #1762e2;
+  color: #fff;
+}
+.test_daas_dropdown {
+  position: relative;
+}
+.test_daas_dropdown_menu {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  display: none;
+}
+.test_daas_dropdown:hover .test_daas_dropdown_menu {
+  display: block;
+  z-index: 10;
+}
+
+.test_daas_dropdown_menu div {
+  background-color: #fff;
+  width: 200px;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+.test_daas_dropdown_menu div:hover {
+  background-color: #1762e2;
+  color: #fff !important;
+}
+.test_daas_dropdown_menu div {
+  color: black;
+}
+.navlink:hover {
+  color: #fff;
+}
+.hambuger_menu_dropdown {
+  display: block !important;
+
+  font-size: 16px;
+  transition: 0.4s ease-in;
+}
+.hambuger_menu_dropdown > div > div {
+  border-bottom: 1px solid gray;
+  font-size: 16px;
+  transition: 0.2s ease-in;
+  padding: 20px;
+}
+.hambuger_menu_dropdown > div > div:hover {
+  background-color: #1762e2;
+  color: #fff;
+}
+@media (max-width: 480px) {
+}
